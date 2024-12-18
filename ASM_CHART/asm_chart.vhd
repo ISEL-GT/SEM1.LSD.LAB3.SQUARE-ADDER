@@ -11,10 +11,15 @@ PORT(
 		MCLK 				: in std_logic;
 		RESET				: in std_logic;
 		SET 				: in std_logic;
-		D 					: in std_logic_vector(2 downto 0);
+		Q 					: in std_logic_vector(2 downto 0);
 		EN					: in std_logic;
-		Q					: out std_logic_vector(2 downto 0)
-		CLk				: out std_logic_vector;
+		Start				: in std_logic;
+		Step 				: in std_logic;
+		
+		D					: out std_logic_vector(2 downto 0);
+		Mux_out 			: out std_logic;
+		Rst	 			: out std_logic;
+		Enable 			: out std_logic
 	);
 END asm_chart;
 
@@ -34,8 +39,8 @@ end component;
 
 component asm_chart_rom is
     port( 
-			address : in std_logic_vector(5 downto 0);
-         data    : out std_logic_vector(3 downto 0)
+			address : in std_logic_vector(4 downto 0);
+         data    : out std_logic_vector(5 downto 0)
     );
 end component;
 
@@ -48,30 +53,28 @@ component asm_chart_reg is
 		  EN					: in std_logic;
 		  Q					: out std_logic_vector(2 downto 0)
 	);
-end asm_chart_reg;
+end component;
 
-signal D2, D1, D0, Q2, Q1, Q0 : std_logic;
-signal address : std_logic_vector(5 downto 0);
-signal data : std_logic_vector(3 downto 0);
+signal D2, D1, D0 : std_logic;
+signal address : std_logic_vector(4 downto 0);
+signal data : std_logic_vector(5 downto 0);
 
 begin
 
     -- Flip-Flop's
-	 Filp_Flop_Q2: FFD port map( MCLK => clk, RESET => reset, SET => '0', D => D2, EN => '1', Q => Q2);
-    Filp_Flop_Q1: FFD port map( MCLK => clk, RESET => reset, SET => '0', D => D1, EN => '1', Q => Q1);
-    Filp_Flop_Q0: FFD port map( MCLK => clk, RESET => reset, SET => '0', D => D0, EN => '1', Q => Q0);
-
-    -- Generate Next State
-    -- ROM
-    address <= Q2 & Q1 & Q0 & B & Sopen & Sclose & Spresence;
-
-    ROM : garageDoorController_ROM port map( address => address, data => data);
-
-    D1 <= data(3);
-    D0 <= data(2);
-
-    -- Generate outputs
-    mux_decoder   <= data(1);
-    OPENclose 		<= data(0);
-
+	 Filp_Flop_Q2: FFD port map( CLK => MCLK, RESET => reset, SET => '0', D => Q(2), EN => '1', Q => D2);
+    Filp_Flop_Q1: FFD port map( CLK => MCLK, RESET => reset, SET => '0', D => Q(1), EN => '1', Q => D1);
+    Filp_Flop_Q0: FFD port map( CLK => MCLK, RESET => reset, SET => '0', D => Q(0), EN => '1', Q => D0);
+	 
+    -- Generate the address to get the next state
+    address <= Q(2) & Q(1) & Q(0) & Start & Step;
+    ROM : asm_chart_rom port map( address => address, data => data);
+	 
+	 -- Generate outputs
+	 D 				<= data(5) & data(4) & data(3);
+	 Rst 				<= data(2);
+	 Enable 			<= data(1);
+    Mux_out   		<= data(0);
+	 
+	 
 end structural;

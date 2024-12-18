@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SquareCounter
-Tue Dec 17 10:49:56 2024
+Wed Dec 18 13:53:20 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,9 +14,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "FFD:Filp_Flop_Q0"
+ 10. Port Connectivity Checks: "FFD:Filp_Flop_Q1"
+ 11. Port Connectivity Checks: "FFD:Filp_Flop_Q2"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +46,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 17 10:49:56 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 18 13:53:20 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SquareCounter                               ;
-; Top-level Entity Name              ; SquareCounter                               ;
+; Top-level Entity Name              ; asm_chart                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 33                                          ;
+; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -68,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; SquareCounter      ; SquareCounter      ;
+; Top-level entity name                                            ; asm_chart          ; SquareCounter      ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,53 +167,57 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
-; SquareCounter.vhd                ; yes             ; User VHDL File  ; C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
+; REG/FFD.vhd                      ; yes             ; User VHDL File  ; C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd                 ;         ;
+; ASM_CHART/asm_chart_rom.vhd      ; yes             ; User VHDL File  ; C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd ;         ;
+; ASM_CHART/asm_chart.vhd          ; yes             ; User VHDL File  ; C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd     ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 33    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; xi[0] ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 33    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 6          ;
+;                                             ;            ;
+; Total combinational functions               ; 6          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 4          ;
+;     -- 3 input functions                    ; 1          ;
+;     -- <=2 input functions                  ; 1          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 6          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 15         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; Q[2]~input ;
+; Maximum fan-out                             ; 6          ;
+; Total fan-out                               ; 41         ;
+; Average fan-out                             ; 1.14       ;
++---------------------------------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+---------------+--------------+
-; |SquareCounter             ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 33   ; 0            ; 0          ; |SquareCounter      ; SquareCounter ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name          ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+---------------+--------------+
+; |asm_chart                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |asm_chart                   ; asm_chart     ; work         ;
+;    |asm_chart_rom:ROM|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |asm_chart|asm_chart_rom:ROM ; asm_chart_rom ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -229,18 +236,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FFD:Filp_Flop_Q0"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; set  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FFD:Filp_Flop_Q1"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; set  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FFD:Filp_Flop_Q2"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; set  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; en   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 33                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 15                          ;
+; cycloneiii_lcell_comb ; 7                           ;
+;     normal            ; 7                           ;
 ;         0 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -259,100 +302,85 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 17 10:49:52 2024
+    Info: Processing started: Wed Dec 18 13:53:15 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SquareCounter -c SquareCounter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file adder/adder_8bits.vhd
-    Info (12022): Found design unit 1: adder_8bits-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/adder_8bits.vhd Line: 20
-    Info (12023): Found entity 1: adder_8bits File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/adder_8bits.vhd Line: 6
+    Info (12022): Found design unit 1: adder_8bits-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd Line: 20
+    Info (12023): Found entity 1: adder_8bits File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rom_x^2/xsquare_rom.vhd
-    Info (12022): Found design unit 1: xSquare_ROM-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ROM_X^2/xSquare_ROM.vhd Line: 11
-    Info (12023): Found entity 1: xSquare_ROM File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ROM_X^2/xSquare_ROM.vhd Line: 4
+    Info (12022): Found design unit 1: xSquare_ROM-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ROM_X^2/xSquare_ROM.vhd Line: 11
+    Info (12023): Found entity 1: xSquare_ROM File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ROM_X^2/xSquare_ROM.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg/reg.vhd
-    Info (12022): Found design unit 1: reg-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/REG/reg.vhd Line: 15
-    Info (12023): Found entity 1: reg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/REG/reg.vhd Line: 4
+    Info (12022): Found design unit 1: reg-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/reg.vhd Line: 15
+    Info (12023): Found entity 1: reg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/reg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg/ffd.vhd
-    Info (12022): Found design unit 1: FFD-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/REG/FFD.vhd Line: 14
-    Info (12023): Found entity 1: FFD File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/REG/FFD.vhd Line: 4
+    Info (12022): Found design unit 1: FFD-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd Line: 14
+    Info (12023): Found entity 1: FFD File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux/mux2x8.vhd
-    Info (12022): Found design unit 1: mux_2x8-structural File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/MUX/MUX2x8.vhd Line: 21
-    Info (12023): Found entity 1: mux_2x8 File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/MUX/MUX2x8.vhd Line: 6
+    Info (12022): Found design unit 1: mux_2x8-structural File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/MUX/MUX2x8.vhd Line: 21
+    Info (12023): Found entity 1: mux_2x8 File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/MUX/MUX2x8.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file adder/half_adder.vhd
-    Info (12022): Found design unit 1: half_adder-structural File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/half_adder.vhd Line: 19
-    Info (12023): Found entity 1: half_adder File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/half_adder.vhd Line: 6
+    Info (12022): Found design unit 1: half_adder-structural File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd Line: 19
+    Info (12023): Found entity 1: half_adder File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file adder/full_adder.vhd
-    Info (12022): Found design unit 1: full_adder-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/full_adder.vhd Line: 21
-    Info (12023): Found entity 1: full_adder File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ADDER/full_adder.vhd Line: 6
+    Info (12022): Found design unit 1: full_adder-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd Line: 21
+    Info (12023): Found entity 1: full_adder File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file lsd_2425i_tlab3/tlab3_tb.vhd
-    Info (12022): Found design unit 1: TLAB3_tb-TLAB3_tb_arch File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/TLAB3_tb.vhd Line: 7
-    Info (12023): Found entity 1: TLAB3_tb File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/TLAB3_tb.vhd Line: 4
+    Info (12022): Found design unit 1: TLAB3_tb-TLAB3_tb_arch File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/TLAB3_tb.vhd Line: 7
+    Info (12023): Found entity 1: TLAB3_tb File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/TLAB3_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file lsd_2425i_tlab3/int7seg.vhd
-    Info (12022): Found design unit 1: int7seg-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/int7seg.vhd Line: 10
-    Info (12023): Found entity 1: int7seg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/int7seg.vhd Line: 4
+    Info (12022): Found design unit 1: int7seg-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/int7seg.vhd Line: 10
+    Info (12023): Found entity 1: int7seg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/int7seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file lsd_2425i_tlab3/decoderhex.vhd
-    Info (12022): Found design unit 1: decoderHex-logicFuntion File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/decoderHex.vhd Line: 13
-    Info (12023): Found entity 1: decoderHex File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/decoderHex.vhd Line: 4
+    Info (12022): Found design unit 1: decoderHex-logicFuntion File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/decoderHex.vhd Line: 13
+    Info (12023): Found entity 1: decoderHex File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/decoderHex.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file lsd_2425i_tlab3/bin2dec.vhd
-    Info (12022): Found design unit 1: bin2bcd-Behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/bin2dec.vhd Line: 11
-    Info (12023): Found entity 1: bin2bcd File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/LSD_2425i_TLAB3/bin2dec.vhd Line: 6
+    Info (12022): Found design unit 1: bin2bcd-Behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/bin2dec.vhd Line: 11
+    Info (12023): Found entity 1: bin2bcd File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/LSD_2425i_TLAB3/bin2dec.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file squarecounter.vhd
-    Info (12022): Found design unit 1: SquareCounter-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 19
-    Info (12023): Found entity 1: SquareCounter File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 4
+    Info (12022): Found design unit 1: SquareCounter-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/SquareCounter.vhd Line: 19
+    Info (12023): Found entity 1: SquareCounter File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/SquareCounter.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file asm_chart/asm_chart_rom.vhd
-    Info (12022): Found design unit 1: asm_chart_rom-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ASM_CHART/asm_chart_rom.vhd Line: 11
-    Info (12023): Found entity 1: asm_chart_rom File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ASM_CHART/asm_chart_rom.vhd Line: 4
+    Info (12022): Found design unit 1: asm_chart_rom-logicFunction File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 11
+    Info (12023): Found entity 1: asm_chart_rom File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file asm_chart/asm_chart_reg.vhd
-    Info (12022): Found design unit 1: asm_chart_reg-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ASM_CHART/asm_chart_reg.vhd Line: 15
-    Info (12023): Found entity 1: asm_chart_reg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/ASM_CHART/asm_chart_reg.vhd Line: 4
-Info (12127): Elaborating entity "SquareCounter" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at SquareCounter.vhd(13): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-Warning (10541): VHDL Signal Declaration warning at SquareCounter.vhd(14): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at SquareCounter.vhd(15): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
+    Info (12022): Found design unit 1: asm_chart_reg-behavioral File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_reg.vhd Line: 15
+    Info (12023): Found entity 1: asm_chart_reg File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_reg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file asm_chart/asm_chart.vhd
+    Info (12022): Found design unit 1: asm_chart-structural File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 27
+    Info (12023): Found entity 1: asm_chart File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 9
+Info (12127): Elaborating entity "asm_chart" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at asm_chart.vhd(58): object "D2" assigned a value but never read File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at asm_chart.vhd(58): object "D1" assigned a value but never read File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at asm_chart.vhd(58): object "D0" assigned a value but never read File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 58
+Info (12128): Elaborating entity "FFD" for hierarchy "FFD:Filp_Flop_Q2" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 65
+Info (12128): Elaborating entity "asm_chart_rom" for hierarchy "asm_chart_rom:ROM" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 71
+Info (10041): Inferred latch for "data[0]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
+Info (10041): Inferred latch for "data[1]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
+Info (10041): Inferred latch for "data[2]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
+Info (10041): Inferred latch for "data[3]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
+Info (10041): Inferred latch for "data[4]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
+Info (10041): Inferred latch for "data[5]" at asm_chart_rom.vhd(13) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX0[7]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 13
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX1[7]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 14
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 15
+    Warning (13410): Pin "Rst" is stuck at GND File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 21
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "xi[0]" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 6
-    Warning (15610): No output dependent on input pin "xi[1]" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 6
-    Warning (15610): No output dependent on input pin "xi[2]" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 6
-    Warning (15610): No output dependent on input pin "xi[3]" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 6
-    Warning (15610): No output dependent on input pin "start" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 7
-    Warning (15610): No output dependent on input pin "step" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 8
-    Warning (15610): No output dependent on input pin "mCLK" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 9
-    Warning (15610): No output dependent on input pin "reset" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 10
-    Warning (15610): No output dependent on input pin "enable" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SquareCounter.vhd Line: 11
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "MCLK" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 11
+    Warning (15610): No output dependent on input pin "RESET" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 12
+    Warning (15610): No output dependent on input pin "SET" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 13
+    Warning (15610): No output dependent on input pin "EN" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd Line: 15
+Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 24 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Tue Dec 17 10:49:56 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 6 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Wed Dec 18 13:53:20 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/simulation/modelsim
+Easm_chart
+Z1 w1734529743
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd
+Z5 FC:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd
+l0
+L9 1
+VD9M>6e9`mSbWXR_9@Yzl;2
+!s100 8Q3^M7ek<l:PoXn2e1jRQ1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1734530098
+!i10b 1
+Z8 !s108 1734530098.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd|
+!s107 C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Astructural
+R2
+R3
+DEx4 work 9 asm_chart 0 22 D9M>6e9`mSbWXR_9@Yzl;2
+!i122 2
+l62
+L27 54
+Vcb<N=k][@L9nT[DaORS`b0
+!s100 ?1]izZJS:>LXFEA1zUJO71
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart.vhd|
+!i113 1
+R10
+R11
+Easm_chart_rom
+Z13 w1734432206
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd
+Z15 FC:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd
+l0
+L4 1
+V?S@BR^HEU[k1<OZMkDoO_0
+!s100 I`RSi9L7BIhV2S;08Z2:P1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd|
+Z17 !s107 C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ASM_CHART/asm_chart_rom.vhd|
+!i113 1
+R10
+R11
+Alogicfunction
+R2
+R3
+DEx4 work 13 asm_chart_rom 0 22 ?S@BR^HEU[k1<OZMkDoO_0
+!i122 1
+l12
+L11 43
+V24o;AlN=`UWIh3@e5OB=z3
+!s100 4^0?l_<QZ2nUj[`Iz52og0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R10
+R11
+Effd
+Z18 w1732792816
+R2
+R3
+!i122 0
+R0
+Z19 8C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd
+Z20 FC:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd
+l0
+L4 1
+VlLnJhUY99`]7^:0M0ZT@z3
+!s100 7zIA7N0c8k?G4DH:]Q7>;3
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd|
+Z22 !s107 C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REG/FFD.vhd|
+!i113 1
+R10
+R11
+Alogicfunction
+R2
+R3
+DEx4 work 3 ffd 0 22 lLnJhUY99`]7^:0M0ZT@z3
+!i122 0
+l16
+L14 9
+VXLGJhA0YLNkWk3eiz=LFX0
+!s100 EbhLHDh93W5h:OfQP8>M81
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R10
+R11
