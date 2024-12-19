@@ -25,7 +25,7 @@ architecture behavioral of adder_8bits is
 		port (
 			A : in std_logic;
 			B : in std_logic;
-			
+				
 			carry_in  : in std_logic;
 			carry_out : out std_logic;
 			
