@@ -10,109 +10,109 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:54 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd 
+# Start time: 13:39:49 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity asm_rom
 # -- Compiling architecture logicFunction of asm_rom
-# End time: 01:22:55 on Dec 19,2024, Elapsed time: 0:00:01
+# End time: 13:39:49 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:55 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd 
+# Start time: 13:39:49 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity asm
 # -- Compiling architecture structural of asm
-# End time: 01:22:55 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/registry_8bits.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/registry_8bits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:55 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/registry_8bits.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/registry_8bits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity registry_8bits
 # -- Compiling architecture behavioral of registry_8bits
-# End time: 01:22:55 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/FFD.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/FFD.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:55 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/FFD.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/REGISTRY/FFD.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FFD
 # -- Compiling architecture logicFunction of FFD
-# End time: 01:22:55 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:55 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/half_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity half_adder
 # -- Compiling architecture structural of half_adder
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:01
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture behavioral of full_adder
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/ADDER/adder_8bits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_8bits
 # -- Compiling architecture behavioral of adder_8bits
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/int7seg.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/int7seg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/int7seg.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/int7seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity int7seg
 # -- Compiling architecture logicFunction of int7seg
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/decoderHex.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/decoderHex.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/decoderHex.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/decoderHex.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoderHex
 # -- Compiling architecture logicFunction of decoderHex
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/bin2dec.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/bin2dec.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/bin2dec.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/DECODERS/bin2dec.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -120,48 +120,60 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bin2bcd
 # -- Compiling architecture Behavioral of bin2bcd
-# End time: 01:22:56 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:56 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity square_adder
 # -- Compiling architecture behavioral of square_adder
-# End time: 01:22:57 on Dec 19,2024, Elapsed time: 0:00:01
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:57 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rom_squares
 # -- Compiling architecture logicFunction of rom_squares
-# End time: 01:22:57 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/MUX2x8.vhd}
+# vcom -93 -work work {C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/MUX2x8.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:22:57 on Dec 19,2024
-# vcom -reportprogress 300 -93 -work work C:/dev/VHDL/SEM1.LSD.LAB3.SQUARE-ADDER/MUX2x8.vhd 
+# Start time: 13:39:50 on Dec 19,2024
+# vcom -reportprogress 300 -93 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/MUX2x8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux_2x8
 # -- Compiling architecture structural of mux_2x8
-# End time: 01:22:57 on Dec 19,2024, Elapsed time: 0:00:00
+# End time: 13:39:50 on Dec 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.square_adder
-# vsim work.square_adder 
-# Start time: 01:23:11 on Dec 19,2024
+vcom -reportprogress 300 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/TLAB3_tb_new.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:53 on Dec 19,2024
+# vcom -reportprogress 300 -work work C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/TLAB3_tb_new.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TLAB3_tb
+# -- Compiling architecture TLAB3_tb_arch of TLAB3_tb
+# End time: 13:40:53 on Dec 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tlab3_tb
+# vsim work.tlab3_tb 
+# Start time: 13:41:03 on Dec 19,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading work.tlab3_tb(tlab3_tb_arch)
 # Loading work.square_adder(behavioral)
 # Loading work.asm(structural)
 # Loading work.ffd(logicfunction)
@@ -177,33 +189,11 @@ vsim work.square_adder
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.bin2bcd(behavioral)
-# Trace back: Error QStructure::sort: invalid command name ""
-#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 descending
-#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 descending
-#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 descending
-#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 descending
-#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
-#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
-add wave -position end  sim:/square_adder/X
-add wave -position end  sim:/square_adder/Start
-add wave -position end  sim:/square_adder/Step
-add wave -position end  sim:/square_adder/MCLK
-add wave -position end  sim:/square_adder/Rst
-add wave -position end  sim:/square_adder/Cy
-add wave -position end  sim:/square_adder/sum
-add wave -position end  sim:/square_adder/HEX0
-add wave -position end  sim:/square_adder/HEX1
-add wave -position end  sim:/square_adder/HEX2
-force -freeze sim:/square_adder/X 0010 0
-force -freeze sim:/square_adder/Start 1 0
-force -freeze sim:/square_adder/Step 0 0
-force -freeze sim:/square_adder/MCLK 1 0
-force -freeze sim:/square_adder/Rst 0 0
+add wave -position insertpoint sim:/tlab3_tb/*
+add wave -position insertpoint sim:/tlab3_tb/UUT/inst_asm/*
 run
 run
 run
 run
-force -freeze sim:/square_adder/Step 1 0
 run
-# End time: 01:25:46 on Dec 19,2024, Elapsed time: 0:02:35
-# Errors: 0, Warnings: 0
+run

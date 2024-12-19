@@ -19,10 +19,10 @@ begin
         "001000" when address = "00010" else
         "001000" when address = "00011" else
         
-        "001010" when address = "00100" else
-        "001010" when address = "00101" else
-        "001010" when address = "00110" else
-        "001010" when address = "00111" else
+        "010100" when address = "00100" else
+        "010100" when address = "00101" else
+        "010100" when address = "00110" else
+        "010100" when address = "00111" else
         
         "010000" when address = "01000" else
         "011000" when address = "01001" else

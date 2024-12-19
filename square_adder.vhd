@@ -96,6 +96,7 @@ architecture behavioral of square_adder is
 	signal asm_mux_output : std_logic;
 	signal asm_reset      : std_logic;
 	signal asm_enable     : std_logic;
+	signal input_choice 	 : std_logic_vector(2 downto 0);
 	
 	signal squared_x       : std_logic_vector(7 downto 0);
 	signal adder_output    : std_logic_vector(7 downto 0);
@@ -111,7 +112,7 @@ begin
         port map (
             MCLK       => MCLK,
             RESET      => Rst,
-            Q          => "000",
+            Q          => next_state,
             Start      => Start,
             Step       => Step,
 				
@@ -143,7 +144,7 @@ begin
         PORT MAP (
             CLK     => MCLK,
             RESET   => asm_reset,
-            SET     => '1',
+            SET     => '0',
             D       => adder_output,  
             EN      => asm_enable,
             Q_8bits => registry_output
@@ -169,7 +170,7 @@ begin
         );
 		  
 	
-	sum <= adder_output;
+	sum <= mux_result;
    
 
 end behavioral;

@@ -92,7 +92,7 @@ begin
         );
 
     -- Generate the address for ROM input
-    address <= Q(2) & Q(1) & Q(0) & Start & Step;
+    address <= D2 & D1 & D0 & Start & Step;
 
     -- ROM instantiation to fetch next state and control signals
     ROM : asm_rom 
