@@ -1,5 +1,5 @@
 Fitter report for square_adder
-Fri Dec 20 15:48:31 2024
+Fri Dec 20 16:03:24 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 20 15:48:31 2024       ;
+; Fitter Status                      ; Successful - Fri Dec 20 16:03:24 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; square_adder                                ;
 ; Top-level Entity Name              ; square_adder                                ;
@@ -214,9 +214,9 @@ The pin-out file can be found in C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.
 ;     -- Combinational with a register        ; 12                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 60                    ;
-;     -- 3 input functions                    ; 11                    ;
-;     -- <=2 input functions                  ; 7                     ;
+;     -- 4 input functions                    ; 61                    ;
+;     -- 3 input functions                    ; 9                     ;
+;     -- <=2 input functions                  ; 8                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
@@ -227,7 +227,7 @@ The pin-out file can be found in C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.
 ;     -- Dedicated logic registers            ; 12 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 8 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 7 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 41 / 360 ( 11 % )     ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
@@ -248,7 +248,7 @@ The pin-out file can be found in C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.8% / 1.0% / 0.6%    ;
+; Peak interconnect usage (total/H/V)         ; 0.9% / 1.1% / 0.6%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
 ; Total fan-out                               ; 410                   ;
@@ -271,9 +271,9 @@ The pin-out file can be found in C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.
 ;     -- Combinational with a register        ; 12                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 60                   ; 0                              ;
-;     -- 3 input functions                    ; 11                   ; 0                              ;
-;     -- <=2 input functions                  ; 7                    ; 0                              ;
+;     -- 4 input functions                    ; 61                   ; 0                              ;
+;     -- 3 input functions                    ; 9                    ; 0                              ;
+;     -- <=2 input functions                  ; 8                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
@@ -284,7 +284,7 @@ The pin-out file can be found in C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.
 ;     -- Dedicated logic registers            ; 12 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 8 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 7 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 41                   ; 0                              ;
@@ -976,10 +976,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |half_adder:instance_half_adder_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_3|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_4|    ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_4                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_4|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
-;       |full_adder:instance_full_adder_5|    ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5                                  ; full_adder     ; work         ;
+;       |full_adder:instance_full_adder_5|    ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
-;       |full_adder:instance_full_adder_6|    ; 4 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6                                  ; full_adder     ; work         ;
-;          |half_adder:instance_half_adder_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
+;       |full_adder:instance_full_adder_6|    ; 5 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (3)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6                                  ; full_adder     ; work         ;
+;          |half_adder:instance_half_adder_2| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_7|    ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (0)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_7                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_7|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_8|    ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (1)            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8                                  ; full_adder     ; work         ;
@@ -1050,9 +1050,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; X[0]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; Start   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; Step    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; X[1]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; X[2]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; X[3]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; X[1]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; X[2]    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; X[3]    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; MCLK    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; Rst     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1073,11 +1073,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - registry_8bits:inst_registry_8bits|FFD:FFD1|Q~0                                                            ; 0                 ; 6       ;
 ;      - registry_8bits:inst_registry_8bits|FFD:FFD2|Q~2                                                            ; 0                 ; 6       ;
 ; Start                                                                                                             ;                   ;         ;
-;      - asm:inst_asm|asm_rom:ROM|Equal30~0                                                                         ; 0                 ; 6       ;
-;      - asm:inst_asm|asm_rom:ROM|data[2]~0                                                                         ; 0                 ; 6       ;
-;      - asm:inst_asm|asm_rom:ROM|data[1]~1                                                                         ; 0                 ; 6       ;
-;      - asm:inst_asm|asm_rom:ROM|data[5]~2                                                                         ; 0                 ; 6       ;
-;      - asm:inst_asm|asm_rom:ROM|data[4]~3                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[0]~0                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[2]~1                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[1]~2                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[5]~3                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[4]~4                                                                         ; 0                 ; 6       ;
 ;      - asm:inst_asm|asm_rom:ROM|data[3]~5                                                                         ; 0                 ; 6       ;
 ; Step                                                                                                              ;                   ;         ;
 ;      - mux_2x8:inst_mux_2x8|result[0]~0                                                                           ; 0                 ; 6       ;
@@ -1088,28 +1088,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux_2x8:inst_mux_2x8|result[5]~5                                                                           ; 0                 ; 6       ;
 ;      - mux_2x8:inst_mux_2x8|result[6]~6                                                                           ; 0                 ; 6       ;
 ;      - mux_2x8:inst_mux_2x8|result[7]~7                                                                           ; 0                 ; 6       ;
-;      - asm:inst_asm|asm_rom:ROM|data[3]~4                                                                         ; 0                 ; 6       ;
+;      - asm:inst_asm|asm_rom:ROM|data[3]~5                                                                         ; 0                 ; 6       ;
 ; X[1]                                                                                                              ;                   ;         ;
-;      - rom_squares:inst_rom_squares|data[2]~0                                                                     ; 0                 ; 6       ;
-;      - rom_squares:inst_rom_squares|data[3]~1                                                                     ; 0                 ; 6       ;
-;      - rom_squares:inst_rom_squares|data[4]~2                                                                     ; 0                 ; 6       ;
-;      - rom_squares:inst_rom_squares|data[5]~3                                                                     ; 0                 ; 6       ;
-;      - rom_squares:inst_rom_squares|data[6]~4                                                                     ; 0                 ; 6       ;
-; X[2]                                                                                                              ;                   ;         ;
+;      - rom_squares:inst_rom_squares|data[2]~0                                                                     ; 1                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[3]~1                                                                     ; 1                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[4]~2                                                                     ; 1                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[5]~3                                                                     ; 1                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[6]~4                                                                     ; 1                 ; 6       ;
-;      - rom_squares:inst_rom_squares|data[7]~5                                                                     ; 1                 ; 6       ;
-;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|carry_out~0                                  ; 1                 ; 6       ;
-;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|half_adder:instance_half_adder_2|result      ; 1                 ; 6       ;
-; X[3]                                                                                                              ;                   ;         ;
+; X[2]                                                                                                              ;                   ;         ;
+;      - rom_squares:inst_rom_squares|data[3]~1                                                                     ; 0                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[4]~2                                                                     ; 0                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[5]~3                                                                     ; 0                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[6]~4                                                                     ; 0                 ; 6       ;
 ;      - rom_squares:inst_rom_squares|data[7]~5                                                                     ; 0                 ; 6       ;
 ;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|carry_out~0                                  ; 0                 ; 6       ;
 ;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|half_adder:instance_half_adder_2|result      ; 0                 ; 6       ;
+; X[3]                                                                                                              ;                   ;         ;
+;      - rom_squares:inst_rom_squares|data[4]~2                                                                     ; 1                 ; 6       ;
+;      - rom_squares:inst_rom_squares|data[5]~3                                                                     ; 1                 ; 6       ;
+;      - rom_squares:inst_rom_squares|data[6]~4                                                                     ; 1                 ; 6       ;
+;      - rom_squares:inst_rom_squares|data[7]~5                                                                     ; 1                 ; 6       ;
+;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|carry_out~0                                  ; 1                 ; 6       ;
+;      - adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8|half_adder:instance_half_adder_2|result      ; 1                 ; 6       ;
 ; MCLK                                                                                                              ;                   ;         ;
 ; Rst                                                                                                               ;                   ;         ;
 ;      - asm:inst_asm|FFD:Flip_Flop_Q2|Q                                                                            ; 1                 ; 6       ;
@@ -1118,16 +1118,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                ;
-+------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                               ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; MCLK                               ; PIN_P11           ; 12      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; Rst                                ; PIN_B14           ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; asm:inst_asm|asm_rom:ROM|data[1]~1 ; LCCOMB_X50_Y51_N8 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; asm:inst_asm|asm_rom:ROM|data[2]~0 ; LCCOMB_X50_Y51_N6 ; 9       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                 ;
++------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                               ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; MCLK                               ; PIN_P11            ; 12      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; Rst                                ; PIN_B14            ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; asm:inst_asm|asm_rom:ROM|data[1]~2 ; LCCOMB_X46_Y50_N24 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; asm:inst_asm|asm_rom:ROM|data[2]~1 ; LCCOMB_X46_Y50_N18 ; 9       ; Async. clear ; no     ; --                   ; --               ; --                        ;
++------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1135,7 +1135,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; MCLK ; PIN_P11  ; 12      ; 1                                    ; Global Clock         ; GCLK19           ; --                        ;
+; MCLK ; PIN_P11  ; 12      ; 2                                    ; Global Clock         ; GCLK19           ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1144,46 +1144,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 102 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 3 / 5,382 ( < 1 % )     ;
-; C4 interconnects      ; 46 / 106,704 ( < 1 % )  ;
-; Direct links          ; 21 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 101 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 6 / 5,382 ( < 1 % )     ;
+; C4 interconnects      ; 45 / 106,704 ( < 1 % )  ;
+; Direct links          ; 31 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 32 / 49,760 ( < 1 % )   ;
+; Local interconnects   ; 37 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 2 / 5,406 ( < 1 % )     ;
-; R4 interconnects      ; 101 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 5 / 5,406 ( < 1 % )     ;
+; R4 interconnects      ; 100 / 147,764 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
-+--------------------------------------------------------------------------+
-; LAB Logic Elements                                                       ;
-+--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 9.75) ; Number of LABs  (Total = 8) ;
-+--------------------------------------------+-----------------------------+
-; 1                                          ; 1                           ;
-; 2                                          ; 0                           ;
-; 3                                          ; 2                           ;
-; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
-; 6                                          ; 0                           ;
-; 7                                          ; 0                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 0                           ;
-; 10                                         ; 0                           ;
-; 11                                         ; 1                           ;
-; 12                                         ; 0                           ;
-; 13                                         ; 1                           ;
-; 14                                         ; 0                           ;
-; 15                                         ; 1                           ;
-; 16                                         ; 2                           ;
-+--------------------------------------------+-----------------------------+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++---------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 11.14) ; Number of LABs  (Total = 7) ;
++---------------------------------------------+-----------------------------+
+; 1                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 1                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 1                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 2                           ;
+; 15                                          ; 1                           ;
+; 16                                          ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.63) ; Number of LABs  (Total = 8) ;
+; LAB-wide Signals  (Average = 0.71) ; Number of LABs  (Total = 7) ;
 +------------------------------------+-----------------------------+
 ; 1 Async. clear                     ; 2                           ;
 ; 1 Clock                            ; 2                           ;
@@ -1194,66 +1194,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 11.25) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced  (Average = 12.86) ; Number of LABs  (Total = 7) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 1                           ;
 ; 2                                            ; 0                           ;
-; 3                                            ; 2                           ;
+; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
+; 10                                           ; 1                           ;
 ; 11                                           ; 1                           ;
 ; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 0                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 2                           ;
 ; 15                                           ; 1                           ;
 ; 16                                           ; 0                           ;
 ; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
+; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
 ; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
+; 25                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.75) ; Number of LABs  (Total = 8) ;
+; Number of Signals Sourced Out  (Average = 8.57) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
-; 3                                               ; 2                           ;
+; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
-; 7                                               ; 1                           ;
-; 8                                               ; 1                           ;
+; 6                                               ; 1                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 2                           ;
 ; 9                                               ; 0                           ;
 ; 10                                              ; 0                           ;
-; 11                                              ; 0                           ;
+; 11                                              ; 1                           ;
 ; 12                                              ; 1                           ;
-; 13                                              ; 1                           ;
-; 14                                              ; 0                           ;
-; 15                                              ; 1                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 7.50) ; Number of LABs  (Total = 8) ;
+; Number of Distinct Inputs  (Average = 9.00) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
@@ -1262,8 +1260,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                           ; 0                           ;
 ; 5                                           ; 2                           ;
 ; 6                                           ; 1                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 1                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
@@ -1271,6 +1269,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                          ; 0                           ;
 ; 14                                          ; 1                           ;
 ; 15                                          ; 1                           ;
+; 16                                          ; 0                           ;
+; 17                                          ; 0                           ;
+; 18                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1464,18 +1465,18 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6612 megabytes
-    Info: Processing ended: Fri Dec 20 15:48:31 2024
+    Info: Peak virtual memory: 6615 megabytes
+    Info: Processing ended: Fri Dec 20 16:03:24 2024
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 

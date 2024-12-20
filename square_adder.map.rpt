@@ -1,5 +1,5 @@
 Analysis & Synthesis report for square_adder
-Fri Dec 20 15:48:25 2024
+Fri Dec 20 16:03:19 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 20 15:48:25 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 20 16:03:19 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; square_adder                                ;
 ; Top-level Entity Name              ; square_adder                                ;
@@ -203,9 +203,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Total combinational functions               ; 77         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 60         ;
-;     -- 3 input functions                    ; 11         ;
-;     -- <=2 input functions                  ; 6          ;
+;     -- 4 input functions                    ; 61         ;
+;     -- 3 input functions                    ; 9          ;
+;     -- <=2 input functions                  ; 7          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
 ;     -- normal mode                          ; 77         ;
@@ -240,10 +240,10 @@ https://fpgasoftware.intel.com/eula.
 ;          |half_adder:instance_half_adder_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_3|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_4|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_4                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_4|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
-;       |full_adder:instance_full_adder_5|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5                                  ; full_adder     ; work         ;
+;       |full_adder:instance_full_adder_5|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_5|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
-;       |full_adder:instance_full_adder_6|    ; 4 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6                                  ; full_adder     ; work         ;
-;          |half_adder:instance_half_adder_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
+;       |full_adder:instance_full_adder_6|    ; 5 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6                                  ; full_adder     ; work         ;
+;          |half_adder:instance_half_adder_2| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_6|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_7|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_7                                  ; full_adder     ; work         ;
 ;          |half_adder:instance_half_adder_2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_7|half_adder:instance_half_adder_2 ; half_adder     ; work         ;
 ;       |full_adder:instance_full_adder_8|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |square_adder|adder_8bits:inst_adder_8bits|full_adder:instance_full_adder_8                                  ; full_adder     ; work         ;
@@ -293,7 +293,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |square_adder|decoderHex:inst_decoderHex|int7seg:U2|dOut[2] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |square_adder|decoderHex:inst_decoderHex|int7seg:U2|dOut[3] ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |square_adder|rom_squares:inst_rom_squares|data[3]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
@@ -377,12 +377,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     normal            ; 83                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 60                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 61                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 6.10                        ;
+; Average LUT depth     ; 6.07                        ;
 +-----------------------+-----------------------------+
 
 
@@ -401,7 +401,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Dec 20 15:48:21 2024
+    Info: Processing started: Fri Dec 20 16:03:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off square_adder -c square_adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -457,12 +457,6 @@ Info (12127): Elaborating entity "square_adder" for the top level hierarchy
 Info (12128): Elaborating entity "asm" for hierarchy "asm:inst_asm" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd Line: 139
 Info (12128): Elaborating entity "FFD" for hierarchy "asm:inst_asm|FFD:Flip_Flop_Q2" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd Line: 64
 Info (12128): Elaborating entity "asm_rom" for hierarchy "asm:inst_asm|asm_rom:ROM" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm.vhd Line: 98
-Info (10041): Inferred latch for "data[0]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
-Info (10041): Inferred latch for "data[1]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
-Info (10041): Inferred latch for "data[2]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
-Info (10041): Inferred latch for "data[3]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
-Info (10041): Inferred latch for "data[4]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
-Info (10041): Inferred latch for "data[5]" at asm_rom.vhd(15) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/STATE_MACHINE/asm_rom.vhd Line: 15
 Info (12128): Elaborating entity "rom_squares" for hierarchy "rom_squares:inst_rom_squares" File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/square_adder.vhd Line: 154
 Info (10041): Inferred latch for "data[0]" at rom_squares.vhd(16) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd Line: 16
 Info (10041): Inferred latch for "data[1]" at rom_squares.vhd(16) File: C:/Isel/1Semestre/LSD/AV/AV_LAB3/SEM1.LSD.LAB3.SQUARE-ADDER/rom_squares.vhd Line: 16
@@ -493,9 +487,9 @@ Info (21057): Implemented 118 device resources after synthesis - the final resou
     Info (21059): Implemented 33 output pins
     Info (21061): Implemented 77 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Fri Dec 20 15:48:25 2024
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Fri Dec 20 16:03:19 2024
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 
