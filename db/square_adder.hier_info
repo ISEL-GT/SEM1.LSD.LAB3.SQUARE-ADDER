@@ -7,40 +7,41 @@ Start => asm:inst_asm.Start
 Step => asm:inst_asm.Step
 MCLK => asm:inst_asm.MCLK
 MCLK => registry_8bits:inst_registry_8bits.CLK
+MCLK => FFD:inst_FFD.CLK
 Rst => asm:inst_asm.RESET
-Cy <= adder_8bits:inst_adder_8bits.carry_out
-sum[0] <= mux_2x8:inst_mux_2x8.result[0]
-sum[1] <= mux_2x8:inst_mux_2x8.result[1]
-sum[2] <= mux_2x8:inst_mux_2x8.result[2]
-sum[3] <= mux_2x8:inst_mux_2x8.result[3]
-sum[4] <= mux_2x8:inst_mux_2x8.result[4]
-sum[5] <= mux_2x8:inst_mux_2x8.result[5]
-sum[6] <= mux_2x8:inst_mux_2x8.result[6]
-sum[7] <= mux_2x8:inst_mux_2x8.result[7]
-HEX0[0] <= decoderHex:inst_decoderHex.HEX0[0]
-HEX0[1] <= decoderHex:inst_decoderHex.HEX0[1]
-HEX0[2] <= decoderHex:inst_decoderHex.HEX0[2]
-HEX0[3] <= decoderHex:inst_decoderHex.HEX0[3]
-HEX0[4] <= decoderHex:inst_decoderHex.HEX0[4]
-HEX0[5] <= decoderHex:inst_decoderHex.HEX0[5]
-HEX0[6] <= decoderHex:inst_decoderHex.HEX0[6]
-HEX0[7] <= decoderHex:inst_decoderHex.HEX0[7]
-HEX1[0] <= decoderHex:inst_decoderHex.HEX1[0]
-HEX1[1] <= decoderHex:inst_decoderHex.HEX1[1]
-HEX1[2] <= decoderHex:inst_decoderHex.HEX1[2]
-HEX1[3] <= decoderHex:inst_decoderHex.HEX1[3]
-HEX1[4] <= decoderHex:inst_decoderHex.HEX1[4]
-HEX1[5] <= decoderHex:inst_decoderHex.HEX1[5]
-HEX1[6] <= decoderHex:inst_decoderHex.HEX1[6]
-HEX1[7] <= decoderHex:inst_decoderHex.HEX1[7]
-HEX2[0] <= decoderHex:inst_decoderHex.HEX2[0]
-HEX2[1] <= decoderHex:inst_decoderHex.HEX2[1]
-HEX2[2] <= decoderHex:inst_decoderHex.HEX2[2]
-HEX2[3] <= decoderHex:inst_decoderHex.HEX2[3]
-HEX2[4] <= decoderHex:inst_decoderHex.HEX2[4]
-HEX2[5] <= decoderHex:inst_decoderHex.HEX2[5]
-HEX2[6] <= decoderHex:inst_decoderHex.HEX2[6]
-HEX2[7] <= decoderHex:inst_decoderHex.HEX2[7]
+Cy << FFD:inst_FFD.Q
+sum[0] << mux_2x8:inst_mux_2x8.result[0]
+sum[1] << mux_2x8:inst_mux_2x8.result[1]
+sum[2] << mux_2x8:inst_mux_2x8.result[2]
+sum[3] << mux_2x8:inst_mux_2x8.result[3]
+sum[4] << mux_2x8:inst_mux_2x8.result[4]
+sum[5] << mux_2x8:inst_mux_2x8.result[5]
+sum[6] << mux_2x8:inst_mux_2x8.result[6]
+sum[7] << mux_2x8:inst_mux_2x8.result[7]
+HEX0[0] << decoderHex:inst_decoderHex.HEX0[0]
+HEX0[1] << decoderHex:inst_decoderHex.HEX0[1]
+HEX0[2] << decoderHex:inst_decoderHex.HEX0[2]
+HEX0[3] << decoderHex:inst_decoderHex.HEX0[3]
+HEX0[4] << decoderHex:inst_decoderHex.HEX0[4]
+HEX0[5] << decoderHex:inst_decoderHex.HEX0[5]
+HEX0[6] << decoderHex:inst_decoderHex.HEX0[6]
+HEX0[7] << decoderHex:inst_decoderHex.HEX0[7]
+HEX1[0] << decoderHex:inst_decoderHex.HEX1[0]
+HEX1[1] << decoderHex:inst_decoderHex.HEX1[1]
+HEX1[2] << decoderHex:inst_decoderHex.HEX1[2]
+HEX1[3] << decoderHex:inst_decoderHex.HEX1[3]
+HEX1[4] << decoderHex:inst_decoderHex.HEX1[4]
+HEX1[5] << decoderHex:inst_decoderHex.HEX1[5]
+HEX1[6] << decoderHex:inst_decoderHex.HEX1[6]
+HEX1[7] << decoderHex:inst_decoderHex.HEX1[7]
+HEX2[0] << decoderHex:inst_decoderHex.HEX2[0]
+HEX2[1] << decoderHex:inst_decoderHex.HEX2[1]
+HEX2[2] << decoderHex:inst_decoderHex.HEX2[2]
+HEX2[3] << decoderHex:inst_decoderHex.HEX2[3]
+HEX2[4] << decoderHex:inst_decoderHex.HEX2[4]
+HEX2[5] << decoderHex:inst_decoderHex.HEX2[5]
+HEX2[6] << decoderHex:inst_decoderHex.HEX2[6]
+HEX2[7] << decoderHex:inst_decoderHex.HEX2[7]
 
 
 |square_adder|asm:inst_asm
@@ -745,6 +746,16 @@ result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[5] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|square_adder|FFD:inst_FFD
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |square_adder|decoderHex:inst_decoderHex

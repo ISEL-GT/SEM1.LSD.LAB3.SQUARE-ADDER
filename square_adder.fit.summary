@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu Dec 19 13:58:58 2024
+Fitter Status : Successful - Fri Dec 20 15:48:31 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : square_adder
 Top-level Entity Name : square_adder
@@ -7,8 +7,8 @@ Device : 10M50DAF484C6GES
 Timing Models : Preliminary
 Total logic elements : 78 / 49,760 ( < 1 % )
     Total combinational functions : 78 / 49,760 ( < 1 % )
-    Dedicated logic registers : 11 / 49,760 ( < 1 % )
-Total registers : 11
+    Dedicated logic registers : 12 / 49,760 ( < 1 % )
+Total registers : 12
 Total pins : 41 / 360 ( 11 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

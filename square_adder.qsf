@@ -67,16 +67,16 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name VHDL_FILE TLAB3_tb_new.vhd
-set_location_assignment PIN_A12 -to Start
-set_location_assignment PIN_P11 -to Mclk
-set_location_assignment PIN_A8 -to sum[0]
-set_location_assignment PIN_A9 -to sum[1]
-set_location_assignment PIN_A10 -to sum[2]
-set_location_assignment PIN_B10 -to sum[3]
-set_location_assignment PIN_D13 -to sum[4]
-set_location_assignment PIN_C13 -to sum[5]
-set_location_assignment PIN_E14 -to sum[6]
-set_location_assignment PIN_D14 -to sum[7]
+set_location_assignment PIN_A12 -to Start -comment SW4
+set_location_assignment PIN_P11 -to Mclk -comment CLOCK50
+set_location_assignment PIN_A8 -to sum[0] -comment LED0
+set_location_assignment PIN_A9 -to sum[1] -comment LED1
+set_location_assignment PIN_A10 -to sum[2] -comment LED2
+set_location_assignment PIN_B10 -to sum[3] -comment LED3
+set_location_assignment PIN_D13 -to sum[4] -comment LED4
+set_location_assignment PIN_C13 -to sum[5] -comment LED5
+set_location_assignment PIN_E14 -to sum[6] -comment LED6
+set_location_assignment PIN_D14 -to sum[7] -comment LED7
 set_location_assignment PIN_A11 -to Cy
 set_location_assignment PIN_C14 -to HEX0[0]
 set_location_assignment PIN_E15 -to HEX0[1]
@@ -102,12 +102,12 @@ set_location_assignment PIN_B21 -to HEX2[4]
 set_location_assignment PIN_C22 -to HEX2[5]
 set_location_assignment PIN_B22 -to HEX2[6]
 set_location_assignment PIN_A19 -to HEX2[7]
-set_location_assignment PIN_B8 -to step
-set_location_assignment PIN_C10 -to X[0]
-set_location_assignment PIN_C11 -to X[1]
-set_location_assignment PIN_D12 -to X[2]
-set_location_assignment PIN_C12 -to X[3]
+set_location_assignment PIN_C10 -to X[0] -comment SW0
+set_location_assignment PIN_C11 -to X[1] -comment SW1
+set_location_assignment PIN_D12 -to X[2] -comment SW2
+set_location_assignment PIN_C12 -to X[3] -comment SW3
 set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
-set_location_assignment PIN_B8 -to Step
-set_location_assignment PIN_A7 -to RST
+set_location_assignment PIN_B8 -to Step -comment KEY0
+set_location_assignment PIN_B14 -to RST -comment SW8
+set_global_assignment -name VHDL_FILE MUX2x1.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Dec 19 13:58:52 2024
+Analysis & Synthesis Status : Successful - Fri Dec 20 15:48:25 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : square_adder
 Top-level Entity Name : square_adder
 Family : MAX 10
 Total logic elements : 77
     Total combinational functions : 77
-    Dedicated logic registers : 11
-Total registers : 11
+    Dedicated logic registers : 12
+Total registers : 12
 Total pins : 41
 Total virtual pins : 0
 Total memory bits : 0

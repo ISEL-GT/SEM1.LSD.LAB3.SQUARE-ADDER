@@ -64,7 +64,22 @@ architecture behavioral of square_adder is
 			  SET     : in std_logic;
 			  D       : in std_logic_vector(7 downto 0);
 			  EN      : in std_logic;
+			  
 			  Q_8bits : out std_logic_vector(7 downto 0)
+		 );
+	end component;
+	
+	
+	-- Component declaration for an ffd entity
+	component FFD is
+		 port(	
+			  CLK     : in std_logic;
+			  RESET   : in std_logic;
+			  SET     : in std_logic;
+			  D       : in std_logic;
+			  EN      : in std_logic;
+			  
+			  Q       : out std_logic
 		 );
 	end component;
 
@@ -76,6 +91,18 @@ architecture behavioral of square_adder is
 			  B        : in std_logic_vector(7 downto 0);
 			  selector : in std_logic;                   
 			  result   : out std_logic_vector(7 downto 0)
+		 );
+	end component;
+	
+	
+	-- Component declaration for the 2x1 multiplexer (mux_2x1) entity
+	component mux_2x1 is
+		 port (
+			  A        : in std_logic;
+			  B        : in std_logic;
+			  selector : in std_logic;      
+			  
+			  result   : out std_logic
 		 );
 	end component;
 	
@@ -100,9 +127,10 @@ architecture behavioral of square_adder is
 	
 	signal squared_x       : std_logic_vector(7 downto 0);
 	signal adder_output    : std_logic_vector(7 downto 0);
+	signal adder_carry     : std_logic;
 	signal registry_output : std_logic_vector(7 downto 0);
 	
-	signal mux_result 	  : std_logic_vector(7 downto 0);
+	signal mux_segment_result 	  : std_logic_vector(7 downto 0);
 	signal decimal_output  : std_logic_vector(11 downto 0);
 	
 	
@@ -135,7 +163,7 @@ begin
 				A => registry_output,               
 				B => squared_x,   
             
-				carry_out => Cy, 
+				carry_out => adder_carry, 
 				result => adder_output
 		  );
 		  
@@ -156,21 +184,33 @@ begin
             A        => registry_output,      
             B        => squared_x,     
             selector => asm_mux_output,
-            result   => mux_result 
+            result   => mux_segment_result 
+        );
+		  
+
+	inst_FFD: FFD
+        PORT MAP (
+            CLK     => MCLK,
+            RESET   => asm_reset,
+            SET     => '0',
+            D       => adder_carry,  
+            EN      => asm_enable,
+            Q 		  => Cy
         );
 		  
 		  
 	inst_decoderHex: decoderHex
         PORT MAP (
-            bin   => mux_result,
+            bin   => mux_segment_result,
             clear => '0',
             HEX0  => HEX0,
             HEX1  => HEX1,
             HEX2  => HEX2
         );
 		  
+		  
 	
-	sum <= mux_result;
+	sum <= mux_segment_result;
    
 
 end behavioral;
