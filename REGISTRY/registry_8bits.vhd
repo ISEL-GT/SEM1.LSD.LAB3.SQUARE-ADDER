@@ -1,6 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
+-- This entity is responsible for acting as a registry, which is just a bunch of flip flops chained together
 ENTITY registry_8bits IS
 PORT(	
 		CLK       : in std_logic;
@@ -11,6 +12,7 @@ PORT(
 		Q_8bits   : out std_logic_vector(7 downto 0)
 );
 END registry_8bits;
+
 
 ARCHITECTURE behavioral OF registry_8bits IS
 

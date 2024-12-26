@@ -1,6 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- This entity is responsible for acting as the main circuit, an adder of the squared products of
+-- a given Xi number.
 entity square_adder is
 	port(
 		 X 		: in std_logic_vector(3 downto 0);
@@ -123,7 +125,7 @@ architecture behavioral of square_adder is
 	signal asm_mux_output : std_logic;
 	signal asm_reset      : std_logic;
 	signal asm_enable     : std_logic;
-	signal input_choice 	 : std_logic_vector(2 downto 0);
+	signal input_choice   : std_logic_vector(2 downto 0);
 	
 	signal squared_x       : std_logic_vector(7 downto 0);
 	signal adder_output    : std_logic_vector(7 downto 0);
@@ -131,11 +133,20 @@ architecture behavioral of square_adder is
 	signal registry_output : std_logic_vector(7 downto 0);
 	
 	signal mux_segment_result 	  : std_logic_vector(7 downto 0);
-	signal decimal_output  : std_logic_vector(11 downto 0);
+	signal decimal_output         : std_logic_vector(11 downto 0);
 	
 	
 begin
-
+	
+	-- Instantiate the state machine, starting with an undefined state that defaults to '000', 
+	-- and then gets fed the result of the rom lookup.
+	
+	-- keypoint to understand state machines: Whilst signals act kind of like variables to store data temporarily, when we feed
+	-- an output into an input, it carries the signal into the next run! This is due to how memory cells work, because this is
+	-- kinda like it!
+	-- Every time that we hit run, D will spew out the next state, which is "wired" into the input, and it will keep changing the
+	-- outputs every clock's cycle. However, since in this case we need to actually change the input values in order for a state to change
+	-- (as defined in the rom), it will display the same machine state until we do so.
 	inst_asm: asm
         port map (
             MCLK       => MCLK,
@@ -145,19 +156,21 @@ begin
             Step       => Step,
 				
             D          => next_state,
-				Enable     => asm_enable,
+			Enable     => asm_enable,
             Mux_out    => asm_mux_output,
             Rst        => asm_reset
         );
 		  
 		  
+	-- ROM with the squared product values
 	inst_rom_squares: rom_squares
         port map (
             address => X,
             data    => squared_x
         );
 		  
-		  
+	
+	-- 8 Bit adder circuit
 	inst_adder_8bits: adder_8bits
 		  port map (
 				A => registry_output,               
@@ -167,7 +180,8 @@ begin
 				result => adder_output
 		  );
 		  
-		  
+	
+	-- The registry used to accumulate the square sums
 	inst_registry_8bits: registry_8bits
         PORT MAP (
             CLK     => MCLK,
@@ -177,8 +191,9 @@ begin
             EN      => asm_enable,
             Q_8bits => registry_output
         );
-		  
-		  
+		
+		
+	-- MUX to either show the accumulated value or the current x^2 result
 	inst_mux_2x8: mux_2x8
         port map (
             A        => registry_output,      
@@ -188,6 +203,7 @@ begin
         );
 		  
 
+	-- Carry out memory cell
 	inst_FFD: FFD
         PORT MAP (
             CLK     => MCLK,
@@ -197,8 +213,9 @@ begin
             EN      => asm_enable,
             Q 		  => Cy
         );
-		  
-		  
+		
+		
+	-- The seven segment display decoder
 	inst_decoderHex: decoderHex
         PORT MAP (
             bin   => mux_segment_result,

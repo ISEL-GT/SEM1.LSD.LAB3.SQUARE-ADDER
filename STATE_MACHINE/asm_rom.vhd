@@ -32,6 +32,6 @@ begin
         "010000" when address = "10110" else
         "010000" when address = "10111" else
         
-		  "000000";
+		"000000";
 
 end logicFunction;
