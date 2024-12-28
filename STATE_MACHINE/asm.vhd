@@ -41,18 +41,6 @@ architecture structural of asm is
         );
     end component;
 
-    -- Register component declaration
-    component registry_3bits is
-        port (  
-            CLK   : in  std_logic;                        -- Clock input
-            RESET : in  std_logic;                        -- Reset input
-            SET   : in  std_logic;                        -- Set input
-            D     : in  std_logic_vector(2 downto 0);     -- Data input
-            EN    : in  std_logic;                        -- Enable input
-            Q     : out std_logic_vector(2 downto 0)      -- Output data
-        );
-    end component;
-
     -- Internal signals
     signal D2, D1, D0  : std_logic;                       -- Signals for Flip-Flop outputs
     signal address     : std_logic_vector(4 downto 0);    -- Address for ROM input
